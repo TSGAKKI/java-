@@ -1,4 +1,4 @@
-package ppt;
+package huaban;
 
 import java.awt.HeadlessException;
 
@@ -16,13 +16,14 @@ public class ChessPlayer extends JFrame {
 		this.space=space;
 		this.grids=grids;
 		chessPanel=new ChessPanel(space, grids);
-		add(chessPanel);
+		
 		setJMenuBar(chessPanel.getChessMenuBar());
-		setSize(600, 600);
+		setSize(705, 770);
 		//½ûÖ¹´°¿ÚÀ­Éì
 		setResizable(false);
-		setVisible(true);
+		setVisible(true);add(chessPanel);
 		//¹Ø±Õ
+		
 		setDefaultCloseOperation(EXIT_ON_CLOSE);
 	}
 
